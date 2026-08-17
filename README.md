@@ -19,8 +19,6 @@ A responsive weather application developed using HTML, CSS, and JavaScript. The 
 - Wind speed information
 - Dynamic weather condition icons
 - Invalid city input handling
-- Search using the Enter key
-- Default city weather on application load
 - Responsive user interface
 
 #### Technologies
@@ -71,6 +69,83 @@ Configure your OpenWeather API key in `main.js`, then open `index.html` in a web
 This project uses the [OpenWeather Current Weather Data API](https://openweathermap.org/api) to retrieve current weather information.
 
 For production deployments, API credentials should not be exposed directly in client-side source code. Use an appropriately restricted API key or a backend/serverless proxy to protect API credentials.
+
+### 2. TipRoast
+
+A playful bill-splitting and tip calculator developed using HTML, CSS, and JavaScript. The application calculates tips, splits bills between multiple people, and provides humorous feedback based on the user's tipping habits.
+
+![TipRoast Preview](TipRoast/img/preview.png)
+
+#### Key Features
+
+- Bill amount calculation
+- Preset tip percentage selection
+- Custom tip percentage input
+- Bill splitting between multiple people
+- Per-person payment calculation
+- Total bill calculation
+- Tip amount calculation
+- Interactive tip selection
+- Dynamic calculation results
+- Contextual taunts based on tipping behavior
+- Responsive user interface
+
+#### Technologies
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+#### Project Structure
+
+```text
+TipRoast/
+├── img/
+│   └── image.jpg
+├── index.html
+├── main.js
+└── style.css
+```
+
+#### Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YRshaurya/15DayDevRush.git
+```
+
+Navigate to the TipRoast directory:
+
+```bash
+cd 15DayDevRush/TipRoast
+```
+
+Open `index.html` in a web browser to run the application.
+
+#### Calculation
+
+The application calculates the tip using:
+
+```text
+Tip Amount = Bill Amount × (Tip Percentage / 100)
+```
+
+The total bill is calculated as:
+
+```text
+Total = Bill Amount + Tip Amount
+```
+
+The amount per person is calculated as:
+
+```text
+Per Person = Total / Number of People
+```
+
+#### Design
+
+TipRoast uses a minimal visual design featuring navy typography, muted wine accents, peach highlights, soft shadows, and an illustrated waiter. The interface combines a clean calculator layout with humorous feedback to create an interactive and engaging experience.
 
 ## Development
 
