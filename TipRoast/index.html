@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TipRoast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>TIP-ROAST</h1>
+      <p>Calculate. Split. Get Judged.</p>
+    </header>
+
+    <div class="text">
+      <img src="img/image.jpg" alt="Waiter" />
+      <p class="result">hello</p>
+    </div>
+
+    <div class="card">
+      <div class="bill">
+        <p>BILL AMOUNT:</p>
+        <input type="number" id="billAmount" placeholder="₹ 1,000" />
+      </div>
+      <div class="tip">
+        <p>TIP:</p>
+        <div class="tipBtn">
+          <button class="tip-option active" data-tip="12">
+            <span class="radio"></span>
+            <span>12%</span>
+          </button>
+
+          <button class="tip-option" data-tip="18">
+            <span class="radio"></span>
+            <span>18%</span>
+          </button>
+
+          <button class="tip-option" data-tip="22">
+            <span class="radio"></span>
+            <span>22%</span>
+          </button>
+        </div>
+        <div class="customTip">
+          <p>CUSTOM TIP:</p>
+          <div class="customTipInput">
+            <input type="number" id="customTip" placeholder="0" />
+            <span>%</span>
+          </div>
+        </div>
+      </div>
+      <div class="people">
+        <p>PEOPLE:</p>
+        <input type="number" id="people" placeholder="0" />
+      </div>
+      <div class="cal">
+        <button id="calculate">CALCULATE</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

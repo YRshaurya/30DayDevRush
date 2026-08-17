@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.header {
+    text-align: center;
+    padding-top: 55px;
+}
+
+.header h1 {
+    color: #363955;
+    font-size: clamp(40px, 4vw, 58px);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin-top: 18px;
+    color: #7F5F67;
+    font-size: clamp(16px, 1.5vw, 21px);
+    letter-spacing: 1px;
+}
+
+/* =========================
+   Waiter
+   ========================= */
+
+.text img {
+    position: fixed;
+    left: 0;
+    bottom: 1%;
+
+    height: clamp(390px, 40vw, 600px);
+    width: auto;
+
+    display: block;
+}
+
+/* =========================
+   Calculator Card
+   ========================= */
+
+.card {
+    position: absolute;
+
+    right: 5%;
+    top: 220px;
+
+    width: min(48vw, 690px);
+    height: min(58vh, 650px);
+
+    padding: 45px 55px;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 25px rgba(54, 57, 85, 0.04),
+        0 25px 60px rgba(54, 57, 85, 0.08);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   Bill
+   ========================= */
+
+.bill {
+    width: 100%;
+}
+
+.bill p {
+    margin-bottom: 12px;
+
+    color: #363955;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.bill input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: none;
+    outline: none;
+    border-radius: 16px;
+
+    background: #FFFFFF;
+
+    color: #363955;
+    font-size: 20px;
+
+    box-shadow:
+        inset 0 3px 8px rgba(54, 57, 85, 0.12),
+        inset 0 -2px 5px rgba(54, 57, 85, 0.04);
+}
+
+/* =========================
+   Tip
+   ========================= */
+
+.tip {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.tip p {
+    margin-bottom: 15px;
+
+    color: #363955;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.tipBtn {
+    display: flex;
+    width: 100%;
+}
+
+.tip-option {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border: none;
+    background: transparent;
+
+    color: #363955;
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+/* Radio */
+
+.radio {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+
+    box-shadow:
+        0 3px 8px rgba(54, 57, 85, 0.15),
+        inset 0 2px 4px rgba(54, 57, 85, 0.08);
+
+    position: relative;
+}
+
+/* Selected radio */
+
+.tip-option.active .radio::after {
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    background: #F4BEA6;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* =========================
+   Custom Tip
+   ========================= */
+
+.customTip {
+    margin-top: 30px;
+    width: 187px;
+}
+
+.customTip p {
+    margin-bottom: 12px;
+
+    color: #363955;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.customTipInput {
+    position: relative;
+    width: 100%;
+}
+
+.customTipInput input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 45px 0 20px;
+
+    border: none;
+    outline: none;
+    border-radius: 16px;
+
+    background: #FFFFFF;
+
+    color: #363955;
+    font-size: 20px;
+
+    box-shadow:
+        inset 0 3px 10px rgba(54, 57, 85, 0.10),
+        inset 0 -2px 5px rgba(54, 57, 85, 0.04);
+}
+
+.customTipInput span {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #7F5F67;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* =========================
+   People
+   ========================= */
+
+.people {
+    width: 187px;
+    margin-top: 10px;
+}
+
+.people p {
+    margin-bottom: 12px;
+
+    color: #363955;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.people input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 20px;
+
+    border: none;
+    outline: none;
+    border-radius: 16px;
+
+    background: #FFFFFF;
+
+    
+    color: #363955;
+    font-size: 20px;
+
+    box-shadow:
+        inset 0 3px 10px rgba(54, 57, 85, 0.10),
+        inset 0 -2px 5px rgba(54, 57, 85, 0.04);
+}
+.cal {
+    width: 100%;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cal button {
+    width: 60%;
+    height: 50px;
+
+    border: none;
+    border-radius: 16px;
+
+    background: #363955;
+    color: #FFFFFF;
+
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+.result {
+    position: absolute;
+    left: 33%;
+    top: 500px;
+
+    transform: translateX(-50%);
+
+    color: #363955;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* =========================
+   Result / Waiter Message
+   ========================= */
+.result {
+    position: absolute;
+
+    left: 33.5%;
+    bottom: 24%;
+
+    width: 420px;
+
+    color: #363955;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* =========================
+   Main Amount
+   ========================= */
+
+.resultAmount {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+
+    margin-bottom: 14px;
+
+    color: #363955;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.resultAmount span {
+    color: #7F5F67;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   Calculation Details
+   ========================= */
+
+.resultDetails {
+    padding: 12px 16px;
+
+    border-left: 4px solid #F4BEA6;
+    border-radius: 0 12px 12px 0;
+
+    background: rgba(244, 190, 166, 0.08);
+
+    color: #363955;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Roast Message
+   ========================= */
+
+.taunt {
+    position: relative;
+
+    margin-top: 18px;
+    padding: 13px 17px;
+
+    color: #7F5F67;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.4;
+
+    background: #FFF7F3;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 6px 18px rgba(54, 57, 85, 0.06);
+}
+
+
+/* Speech bubble pointer */
+
+.taunt::before {
+    content: "";
+
+    position: absolute;
+
+    left: 22px;
+    top: -7px;
+
+    width: 14px;
+    height: 14px;
+
+    background: #FFF7F3;
+
+    transform: rotate(45deg);
+}
